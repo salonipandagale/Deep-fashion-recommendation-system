@@ -1,10 +1,6 @@
 # Deep-fashion-recommendation-system
 Deep learning-based fashion recommendation system using VGG16 for feature extraction and cosine similarity for visual search.
 
-# Fashion Recommendation System (CNN-Based)
-
-A deep learning-based fashion recommendation system that suggests visually similar clothing items using image features.
-
 ## Overview
 This project implements a **content-based recommendation system** using **Convolutional Neural Networks (CNNs)**. It analyzes fashion images and recommends similar items based on visual similarity.
 
