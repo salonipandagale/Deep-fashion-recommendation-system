@@ -24,7 +24,7 @@ This project implements a **content-based recommendation system** using **Convol
 ##  Dataset
 - Women Fashion Dataset (image-based)
 - Contains various clothing items like dresses, kurtas, etc.
-- Link : https://drive.google.com/drive/folders/14TeaFkXLUfBIbVbEVN0L1TesgB0Cn-Mh?usp=sharing
+- Link : (https://drive.google.com/file/d/1KjHfcp8xjL1j-q5eJp8ucloQHhe7Xju7/view?usp=sharing)
 
 ⚠️ Dataset is not included due to size limitations.  
 You can use any fashion dataset from Kaggle.
