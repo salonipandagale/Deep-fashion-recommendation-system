@@ -77,11 +77,7 @@ You can use any fashion dataset from Kaggle.
 ## How to Run
 
 ### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/fashion-recommendation-system.git
-cd fashion-recommendation-system
-```
+My repo : https://github.com/salonipandagale/Deep-fashion-recommendation-system
 
 ### 2. Install Dependencies
 
