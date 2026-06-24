@@ -166,7 +166,7 @@ This project is open-source and available under the MIT License.
 ## Author
 
 Saloni Pandagale
-Deep Learning and AI Enthusiast
+**(Deep Learning and AI Enthusiast)**
 
 ## Output Example
 Input image → System recommends visually similar outfits
