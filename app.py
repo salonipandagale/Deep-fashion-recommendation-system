@@ -6,8 +6,17 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 from fashion_utils import preprocess_image, extract_features, recommend
 
-# ---------------- PAGE CONFIG ----------------
+import gdown
+import os
 
+MODEL_PATH = "vgg16_feature_extractor.h5"
+
+# Download model if not present
+if not os.path.exists(MODEL_PATH):
+    url = "https://drive.google.com/uc?id=1dDgmSzk8mWg8K3hIDk2M5a-wZv3nRB0m"
+    gdown.download(url, MODEL_PATH, quiet=False)
+
+# ---------------- PAGE CONFIG ----------------
 st.set_page_config(
     page_title="Fashion Recommender",
     page_icon="👗",
