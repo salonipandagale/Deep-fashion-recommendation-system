@@ -1,8 +1,8 @@
 streamlit
-numpy
-pandas
+numpy==1.26.4
+pandas==2.2.2
 scikit-learn
-Pillow
 plotly
+Pillow
 gdown
-tensorflow==2.15.0
+tensorflow-cpu==2.16.1
