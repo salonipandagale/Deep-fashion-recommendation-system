@@ -1,7 +1,8 @@
 streamlit
-tensorflow==2.13.0
-pillow
 numpy
-scipy
+pandas
 scikit-learn
+Pillow
+plotly
 gdown
+tensorflow==2.15.0
