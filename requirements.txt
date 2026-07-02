@@ -1,5 +1,4 @@
-plotly
-gdown
 streamlit
 numpy>=1.26
-scikit-learn
+plotly
+gdown
