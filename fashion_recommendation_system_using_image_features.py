@@ -113,7 +113,7 @@ def recommend_fashion_items_cnn(input_image_path, all_features, all_image_names,
     plt.show()
 
 #save model
-model.save("vgg16_feature_extractor_fixed.h5")
+model.save("model.keras")
 
 """# You need to give the path of an image as an input, and you will see similar fashion recommendations as output."""
 
