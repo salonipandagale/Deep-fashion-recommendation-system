@@ -88,7 +88,7 @@ st.markdown(
 
 @st.cache_resource
 def load_model_and_data():
-    model = load_model("vgg16_feature_extractor_fixed.h5", compile=False)
+    model = load_model("model.keras", compile=False)
     features = pickle.load(open("features.pkl", "rb"))
     filenames = pickle.load(open("filenames.pkl", "rb"))
     return model, features, filenames
