@@ -1,6 +1,0 @@
-[server]
-headless = true
-runOnSave = true
-
-[runner]
-python_version = "3.10"
