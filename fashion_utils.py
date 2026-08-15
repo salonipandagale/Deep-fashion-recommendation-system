@@ -5,6 +5,8 @@ from scipy.spatial.distance import cosine
 
 
 def preprocess_image(img_path):
+    img_path = str(img_path).replace("\\", "/")
+
     img = image.load_img(
         img_path,
         target_size=(224, 224)
@@ -14,7 +16,6 @@ def preprocess_image(img_path):
     img_array = np.expand_dims(img_array, axis=0)
 
     return preprocess_input(img_array)
-
 
 def extract_features(model, img_array):
     features = model.predict(img_array, verbose=0)
@@ -30,13 +31,8 @@ def extract_features(model, img_array):
 
 
 def recommend(image_path, model, features, filenames, top_n=5):
-
     input_img = preprocess_image(image_path)
-
-    input_features = extract_features(
-        model,
-        input_img
-    )
+    input_features = extract_features(model, input_img)
 
     similarities = [
         1 - cosine(input_features, f)
@@ -45,12 +41,20 @@ def recommend(image_path, model, features, filenames, top_n=5):
 
     indices = np.argsort(similarities)[::-1]
 
+    # Normalize paths so they work on both Windows and Linux
+    normalized_filenames = [
+        str(path).replace("\\", "/")
+        for path in filenames
+    ]
+
+    normalized_input = str(image_path).replace("\\", "/")
+
     indices = [
         i for i in indices
-        if filenames[i] != image_path
+        if normalized_filenames[i] != normalized_input
     ][:top_n]
 
     return [
-        filenames[i]
+        normalized_filenames[i]
         for i in indices
     ]
