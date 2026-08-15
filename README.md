@@ -30,9 +30,6 @@ It leverages a pre-trained VGG16 Convolutional Neural Network to extract meaning
 * Extracted from a ZIP file stored in Google Drive
 * Link : (https://drive.google.com/file/d/1KjHfcp8xjL1j-q5eJp8ucloQHhe7Xju7/view?usp=sharing)
 
-⚠️ Dataset is not included due to size limitations.  
-You can use any fashion dataset from Kaggle.
-
 ---
 
 ## Tech Stack
