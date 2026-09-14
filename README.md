@@ -137,7 +137,6 @@ Output: Similar ethnic wear recommendations based on design, color, and texture
 
 * Use advanced models like ResNet or EfficientNet
 * Add FAISS or Annoy for faster similarity search
-* Deploy as a web application using Streamlit or Flask
 * Add user personalization
 * Integrate text and image-based hybrid recommendations
 
@@ -164,7 +163,3 @@ This project is open-source and available under the MIT License.
 
 Saloni Pandagale
 **(Deep Learning and AI Enthusiast)**
-
-## Output Example
-Input image → System recommends visually similar outfits
-
